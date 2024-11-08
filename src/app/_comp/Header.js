@@ -44,7 +44,7 @@ function Header() {
             <p className="font-medium text-xs text-gray-600 w-full md:w-4/5 text-justify">
               Start your degree with 2 years at Shoolini University, then
               complete your final 2 years at one of our partner universities
-              abroad. Plus, you&apos;ll get a{" "}
+              abroad. Plus, you'll get a{" "}
               <span className="text-red-500">2-year work visa</span>, opening
               doors to Permanent Residency.
             </p>

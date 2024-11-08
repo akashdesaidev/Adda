@@ -67,35 +67,30 @@ function Ourpartner() {
   }, []);
 
   return (
-    <div className="w-full relative my-14 shadow-[7.83px_19.58px_60px_0px_rgba(107,0,9,0.25)] rounded-lg">
-      <div className="absolute w-[500px] min-h-full left-[-350px] md:left-[-320px] bottom-[40px] bg-[rgba(255,255,255,0.94)] blur-[50.15px]" />
-      <div class="absolute w-[452px] min-h-full left-[-350px] md:left-[-320px] top-[80px] bg-white shadow-[0px_4px_4px_rgba(0,0,0,0.25)] blur-[50px]" />
+    <div className="overflow-hidden w-full relative my-14 rounded-lg">
+      <div className="absolute w-[500px] min-h-full left-[-450px] md:left-[-360px] bottom-[40px] bg-[rgba(255,255,255,0.94)] blur-[50.15px]" />
+      <div class="absolute w-[452px] min-h-full left-[-420px] md:left-[-360px] top-[80px] bg-white shadow-[0px_4px_4px_rgba(0,0,0,0.25)] blur-[50px]" />
 
-      <div className="absolute w-[500px] min-h-full  right-[-400px] md:right-[-320px] bottom-[40px] bg-[rgba(255,255,255,0.94)] blur-[50.15px]" />
+      <div className="absolute w-[500px] min-h-full  right-[-450px] md:right-[-360px] bottom-[40px] bg-[rgba(255,255,255,0.94)] blur-[50.15px]" />
 
-      <div class="absolute w-[452px] min-h-full right-[-400px] md:right-[-320px] top-[80px] bg-white shadow-[0px_4px_4px_rgba(0,0,0,0.25)] blur-[50px]" />
+      <div class="absolute w-[452px] min-h-full right-[-450px] md:right-[-360px] top-[80px] bg-white shadow-[0px_4px_4px_rgba(0,0,0,0.25)] blur-[50px]" />
       <div
         ref={sliderRef}
-        className="flex gap-4 min-m-[100%] overflow-hidden scroll-smooth"
+        className="flex gap-4 max-w-[100vw] overflow-hidden scroll-smooth h-full"
       >
         {array.map((d, i) => {
           return (
             <div
               key={i}
-              className="min-w-72  flex flex-col rounded-lg border-solid border border-[#F0F0F0] overflow-hidden shadow-[7.83px_19.58px_60px_0px_rgba(107,0,9,0.25)]"
+              className="min-w-72 h-full flex flex-col rounded-lg border-solid border border-[#F0F0F0] overflow-hidden shadow-[7.83px_19.58px_60px_0px_rgba(107,0,9,0.25)]"
             >
               <div key={i} className="flex justify-center bg-white py-3">
                 <div className="w-36">
-                  <Image
-                    alt="banner"
-                    src={d.image}
-                    width={1000}
-                    height={1000}
-                  />
+                  <Image alt="banner" src={d.image} width={1000} height={100} />
                 </div>
               </div>
 
-              <Image alt="banner" src={d.image2} width={1000} height={1000} />
+              <Image alt="banner" src={d.image2} width={1000} height={100} />
             </div>
           );
         })}
