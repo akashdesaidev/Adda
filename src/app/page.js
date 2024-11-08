@@ -16,10 +16,6 @@ export default function Home() {
       </div>
       <Benifits />
       <Ourpartner />
-<<<<<<< HEAD
-=======
-      <Benifits />
->>>>>>> 9f7785b38c8ffccb2419e1b7621e960cd48aa7b6
     </>
   );
 }
